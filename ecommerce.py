@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 
 # Load the data
-df = pd.read_csv('data/data test.csv', sep=',', encoding='iso-8859-1')
+df = pd.read_excel('data test.xlsx', sheet_name='data test')
 
 # Convert InvoiceDate to datetime
 df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
